@@ -1,0 +1,38 @@
+p, h4 {
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.main {
+margin-top: 56px;
+  }
+
+p {
+  max-width: 600px;
+  padding: 0 15px 0 15px;
+}
+
+.parallax-image {
+    height: calc(100vh - 56px);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.darkened {
+  padding-top: 20px;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, .6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+.accordion {
+  width: 600px;
+  max-width: 80%;
+  margin: 0 auto;
+}
