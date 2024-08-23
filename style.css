@@ -31,8 +31,12 @@ p {
   gap: 30px;
 }
 
-.accordion {
+form {
   width: 600px;
   max-width: 80%;
   margin: 0 auto;
+}
+
+form label, #emailHelp {
+  color: white;
 }

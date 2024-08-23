@@ -11,10 +11,10 @@
     <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">FlyLab</a>
-    <button style="box-shadow: none" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <button style="box-shadow: none" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+    <div class="collapse navbar-collapse justify-content-end" id="navbar-toggler">
       <ul class="navbar-nav mb-2 mb-lg-0 right">
         <li class="nav-item">
           <a class="nav-link" href="#section1">Что мы делаем?</a>
@@ -36,7 +36,7 @@
   <div id="section1" class="parallax-image" style="background-image: url('https://pofoto.club/uploads/posts/2022-08/1660586578_69-pofoto-club-p-mukha-lvinka-79.jpg')">
 <div class="darkened">
   <h4>Что мы делаем?</h4>
-  <p>FlyLab использует особый вид насекомых - черную львинку - для разведения и использования в качестве сырья. В течение трех недель личинки набирают массу, поглощая органическую массу, потом часть отправляется в производство, а часть - на создание новых личинок. Такой цикл занимает около месяца и позволяет быстро нарастить темпы производства.</p>
+  <p>FlyLab использует особый вид насекомых - черную львинку - для разведения и использования в качестве сырья. В течение трех недель личинки растут, поглощая органическую массу, потом часть отправляется в производство, а часть - на создание новых личинок. Такой цикл занимает около месяца и позволяет быстро нарастить темпы производства.</p>
   </div>
   </div>
   <div id="section2" class="parallax-image" style="background-image: url('https://avatars.dzeninfra.ru/get-zen_doc/10137773/pub_64e5b70f10ec5a540a537bb8_64e5b71686d0d004163b35d9/scale_1200')">
@@ -54,45 +54,32 @@
   <div id="section4" class="parallax-image" style="background-image: url('https://avatars.dzeninfra.ru/get-zen_doc/1525719/pub_64e5b70f10ec5a540a537bb8_64e5b7131808a018fa4d91e6/scale_1200')">
     <div class="darkened">
       <h4>Партнёрам</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas convallis, nisi non egestas congue, nisl magna feugiat neque, vitae molestie neque nisi eget libero. Etiam convallis quam quis velit accumsan, iaculis venenatis ligula iaculis. Aliquam lacinia orci quis mauris dignissim, ac porta tellus semper. </p>
-      <div class="accordion" id="my_accordion">
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        Accordion Item #1
-      </button>
-    </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#my_accordion">
-      <div class="accordion-body">
-        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      <p>Вы можете оставить заявку на партнёрство по франшизе или о покупке доли в основном бизнесе в форме ниже</p>
+      <form>
+        <div class="mb-3">
+          <label for="text" class="form-label">Как к Вам обращаться?</label>
+          <input type="text" class="form-control" id="text" required>
+        </div>
+        <div class="form-check">
+        <input class="form-check-input" type="radio" name="radio" id="radio1" checked>
+        <label class="form-check-label" for="radio1">
+          Франшиза
+        </label>
       </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        Accordion Item #2
-      </button>
-    </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#my_accordion">
-      <div class="accordion-body">
-        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      <div class="mb-3 form-check">
+        <input class="form-check-input" type="radio" name="radio" id="radio2">
+        <label class="form-check-label" for="radio2">
+          Доля в стартапе
+        </label>
       </div>
-    </div>
+  <div class="mb-3">
+    <label for="email" class="form-label">Email для связи</label>
+    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
+    <div id="emailHelp" class="form-text">Никакие данные не будут распростарнены.</div>
   </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        Accordion Item #3
-      </button>
-    </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#my_accordion">
-      <div class="accordion-body">
-        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
-    </div>
-  </div>
-</div>
+
+  <button type="submit" class="btn btn-primary">Подать заявку</button>
+</form>
       </div>
   </div>
 </div>
